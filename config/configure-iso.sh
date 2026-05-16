@@ -22,6 +22,7 @@ chmod 0440 /etc/sudoers.d/rakuos-software
 # add flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak update --system --appstream -y
+
 # Remove all versionlocks, in order to avoid dependency issues
 dnf -qy versionlock clear
 
