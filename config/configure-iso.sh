@@ -44,7 +44,7 @@ mkdir -p /var/lib/rpm-state # Needed for Anaconda Web UI
 dnf install -y --refresh "${PACKAGES[@]}"
 
 # Utilities for displaying a dialog prompting users to review secure boot documentation
-dnf install -qy --setopt=install_weak_deps=0 qrencode yad
+dnf install -qy --setopt=install_weak_deps=0 qrencode yad gparted
 
 # The installed image already carries the real prebaked overlay state.
 # For the live squashfs, wipe that state back out so the live environment stays
