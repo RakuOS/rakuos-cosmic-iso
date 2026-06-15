@@ -20,7 +20,7 @@ flatpak update --system --appstream -y
 dnf -qy versionlock clear
 
 # Install RakuOS installer (COSMIC frontend + common backend + fisherman)
-dnf install -qy rakuos-installer-cosmic libblockdev-{btrfs,lvm,dm}
+dnf install -qy rakuos-installer-cosmic
 
 # Read packages into array and install
 mapfile -t PACKAGES < <(
