@@ -16,7 +16,7 @@ flatpak update --system --appstream -y
 dnf -qy versionlock clear
 
 # Install RakuOS installer (COSMIC frontend + common backend + fisherman)
-dnf install -qy rakuos-installer-cosmic rakuos-core
+dnf install -qy rakuos-installer-cosmic
 
 # Disable overlay services in live environment
 systemctl disable --now rakuos-overlay-sync.service
